@@ -5,10 +5,10 @@
       :duration="{ enter: 2500, leave: 1500 }"
       enter-active-class="animated fadeInUp">
       <div class="cont"  v-if="show">
-        <img class="avatar" src="../../static/img/bg3.jpg" alt="">
-        <h2>博学之,审问之,慎思之,明辨之,笃行之</h2>
-        <p>我叫何俊</p>
-        <p>半年多的前端开发经验</p>
+        <img class="avatar" src="../../static/img/my.jpg" alt="">
+        <h2>程序不是年轻的专利，但是，他属于年轻。</h2>
+        <p>Lewis - 何俊</p>
+        <p>三年前端开发经验</p>
         <div class="state">
           <el-row :gutter="30">
             <template v-for="item in states">
@@ -31,10 +31,10 @@ export default {
     return {
       show: false,
       states: [
-        {icon: 'icon-nianling', val: '年龄/21'},
+        {icon: 'icon-nianling', val: '年龄/23'},
         {icon: 'icon-xueli', val: '学历/专科'},
         {icon: 'icon-icon-', val: '坐标/安徽合肥'},
-        {icon: 'icon-zhiwei', val: '状态/离职'}
+        {icon: 'icon-zhiwei', val: '状态/在职'}
       ]
     }
   },

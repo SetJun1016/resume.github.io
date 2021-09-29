@@ -1,6 +1,6 @@
 <template>
   <div class="info">
-    <h1>作品集/Profile</h1>
+    <h1>项目经验/Profile</h1>
     <transition
       :duration="{ enter: 2500, leave: 1500 }"
       enter-active-class="animated fadeInRight">
@@ -27,14 +27,19 @@ export default {
       show: false,
       profiles: [
         {
-          name: '心理健康平台',
-          skills: ' vue框架 layui组件库 axios css3 echarts',
-          content: '该项目是一个针对于对心理健康的进行评估并可以进行在线预约医生的平台，主要实现 的功能有身份证登录，心里评估，在线预约，自主预约，心理学介绍，答题游戏等 '
+          name: '小海绵平台',
+          skills: ' vue cube-ui 云闪付小程序 微信公众号 vuex webpack',
+          content: '该项目主要是一个基于vue框架和cube-ui组件库开发的一个云闪付小程序和一个微信公众号，主要实现的功能有市场主流App推广，各银行独立活动，客户权益，商城购物，以及钱包提现，推广数据，线上审批等'
         },
         {
-          name: 'OA办公系统',
-          skills: 'vue vue-cli vue-router vuex axios html5 css3 echart element-ui',
-          content: '该项目是一个基于VUE框架和element-ui 组件库开发的一个公司的办公管理软件，主 要实现的功能有用户登陆（限制权限）/公司部门管理/员工考勤管理/员工假期申请/员工薪资管理 /电子邮件/通讯录/日程表/等。'
+          name: '运营办公系统',
+          skills: 'vue vuex echart element-ui webpack git ci/cd',
+          content: '该项目是一个基于VUE框架和element-ui 组件库开发的一个公司运营的办公管理系统，主要实现的功能有用户登陆（限制权限）/公司部门管理/员工/员工管辖区域政策审批（抄送/评论等）/拜访信息填写/各政策数据实时统计/电子邮件/通讯录/日程表/等。'
+        },
+        {
+          name: '负责人端系统',
+          skills: 'vue vuex echart ant-design-vue webpack git ci/cd',
+          content: '该项目是一个基于VUE框架和ant-design-vue组件库开发的一个负责人管理系统，主要实现功能有负责人管理自己的下属及员工，查看业务数据情况，审核审批，批量生成各产品推广码，动态创建表单，钱包提现功能等'
         }
       ]
     }

@@ -9,7 +9,7 @@
         <template v-for="skill in skills">
           <el-row :gutter="20" :key="skill.name">
             <el-col :span="8">
-              <div class="left" :style="{backgroundColor: `${skill.background}`}">
+              <div class="left" :style="{backgroundColor: `${skill.background}`, height: `${(skill.child.length / 2) * 50 + ((skill.child.length / 2) - 1) * 20}px;`, lineHeight: `${(skill.child.length / 2) * 50 + ((skill.child.length / 2) - 1) * 20}px`}">
                 <h2>{{skill.name}}</h2>
               </div>
             </el-col>
@@ -43,18 +43,18 @@ export default {
           child: [
             {name: 'HTML5', background: 'rgba(29, 218, 61, 0.2)'},
             {name: 'CSS3', background: 'rgba(29, 218, 61, 0.2)'},
-            {name: 'JavaScript', background: 'rgba(29, 218, 61, 0.2)'},
-            {name: 'ajax', background: 'rgba(29, 218, 61, 0.2)'}
+            {name: 'ES5 ES6 ES7', background: 'rgba(29, 218, 61, 0.2)'},
+            {name: 'TypeScript', background: 'rgba(29, 218, 61, 0.2)'}
           ]
         },
         {
-          name: '框架',
+          name: '框架类',
           background: 'rgba(211, 184, 30, 0.2)',
           child: [
-            {name: 'bootstrap', background: 'rgba(211, 184, 30, 0.2)'},
             {name: 'vue(熟练)', background: 'rgba(211, 184, 30, 0.2)'},
-            {name: 'angular', background: 'rgba(211, 184, 30, 0.2)'},
-            {name: 'react', background: 'rgba(211, 184, 30, 0.2)'}
+            {name: 'uni-app', background: 'rgba(211, 184, 30, 0.2)'},
+            {name: 'react', background: 'rgba(211, 184, 30, 0.2)'},
+            {name: '小程序开发', background: 'rgba(211, 184, 30, 0.2)'}
           ]
         },
         {
@@ -62,9 +62,11 @@ export default {
           background: 'rgba(232, 13, 24, 0.2)',
           child: [
             {name: 'Git', background: 'rgba(232, 13, 24, 0.2)'},
-            {name: 'VS Code', background: 'rgba(232, 13, 24, 0.2)'},
             {name: 'npm', background: 'rgba(232, 13, 24, 0.2)'},
-            {name: 'mysql', background: 'rgba(232, 13, 24, 0.2)'}
+            {name: 'webpack', background: 'rgba(232, 13, 24, 0.2)'},
+            {name: 'vite', background: 'rgba(232, 13, 24, 0.2)'},
+            {name: 'node', background: 'rgba(232, 13, 24, 0.2)'},
+            {name: 'CI/CD', background: 'rgba(232, 13, 24, 0.2)'}
           ]
         }
       ]
@@ -92,14 +94,15 @@ export default {
     .left {
       margin: 10px auto;
       width: 100%;
-      height: 160px;
+      // height: 120px;
       // background-color: rgba(211, 184, 30, 0.2);
-      line-height: 160px;
+      // line-height: 120px;
     }
     .right {
-      height: 70px;
+      height: 52px;
       // background-color: rgba(232, 13, 24, 0.2);
-      line-height: 70px;
+      line-height: 52px;
+      margin: 0;
     }
   }
 }
